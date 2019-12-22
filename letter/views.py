@@ -9,6 +9,7 @@ import socket
 def home(request):
     return render(request, 'home.html')
 
+'''
 def new(request):
     if request.method == 'POST':
         form = LetterForm(request.POST)
@@ -29,7 +30,24 @@ def new(request):
     else:
         gift = request.GET.get('gift')
         form = LetterForm()
-        return render(request, 'new.html', {'form':form, 'gift':gift})
+        return render(request, 'new.html', {'form':form, 'gift':gift})'''
+
+def new(request):
+    if request.method == 'POST':
+        form = LetterForm(request.POST)
+        if form.is_valid():
+            letter = form.save(commit=False)
+            letter.title = form.cleaned_data['title']
+            letter.content = form.cleaned_data['content']
+            letter.name = form.cleaned_data['name']
+            letter.sender = socket.gethostbyname(socket.gethostname()) #보내는사람 IP주소 저장
+            letter.save()
+            return render(request, 'link.html', {'pk':letter.id})
+        else:
+            return HttpResponse('폼이 유효하지 않다는데요..? 다시입력해보세요 ㅎ')
+    else:
+        form = LetterForm()
+        return render(request, 'new.html', {'form':form})
 
 def gift(request):
     return render(request, 'gift.html')

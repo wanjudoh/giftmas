@@ -10,7 +10,7 @@
 
 <body>
 <div id="pk" style="visibility:hidden;">{{pk}}</div>
-<div id="gift" style="visibility:hidden;">{{gift}}</div>
+<!--<div id="gift" style="visibility:hidden;">{{gift}}</div>-->
 
 <!--이게 카카오 링크 버튼!-->
 <a id="kakao-link-btn" href="javascript:;">
@@ -21,12 +21,13 @@
 <!--카카오톡으로 보내는 부분-->
 <script type='text/javascript'>
     var pk = document.getElementById("pk").innerHTML;
-    var imgIndex = document.getElementById("gift").innerHTML;
-
+    //var imgIndex = document.getElementById("gift").innerHTML;
+    var imgIndex = 0;
     var last = "detail/".concat(pk);
-    var imgList = ['http://file3.instiz.net/data/cached_img/upload/2018/10/25/15/1c435cedfcfbb987c32073cc38c984c8.jpg',
+    /*var imgList = ['http://file3.instiz.net/data/cached_img/upload/2018/10/25/15/1c435cedfcfbb987c32073cc38c984c8.jpg',
     'http://mblogthumb1.phinf.naver.net/MjAxODAzMjZfNjMg/MDAxNTIyMDU0MzMyNDU1.vHL2WYntO4mVL7nvkbhd9U4p5D25F4PoyCbu8Ccuc6gg.eNQWUddba7_XpMNwT9dboykxxngRwXBdZaWSBhWCIhMg.JPEG.bhc4885/%EB%8F%84%EB%AF%B8%EB%85%B8%ED%94%BC%EC%9E%90_%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1_%EA%B8%B0%ED%94%84%ED%8B%B0%EC%BD%98_%EC%BF%A0%ED%8F%B0.jpg?type=w800',
-    ]; //여기에 기프티콘 이미지 만든거 넣기!!
+    ]; //여기에 기프티콘 이미지 만든거 넣기!!*/
+    var imgList = ['http://file3.instiz.net/data/cached_img/upload/2018/10/25/15/1c435cedfcfbb987c32073cc38c984c8.jpg'];
 
     Kakao.init('b1256f439183fbd64043c20c046e7fa6');
     Kakao.Link.createDefaultButton({
@@ -36,8 +37,8 @@
         title: '선물과 편지가 도착했습니다.',
         imageUrl: imgList[imgIndex], //기프티콘에 뜰 이미지가 들어감
         link: {
-            mobileWebUrl: 'https://wanju-town.tistory.com/', 
-            webUrl: 'https://wanju-town.tistory.com/'
+            mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+            webUrl: 'https://againpapo.herokuapp.com/'.concat(last),
         },
         imageWidth: 200,
         imageHeight: 300,
@@ -46,15 +47,15 @@
         {
           title: '편지보러 가기', //여기다가 디테일 페이지 연결해주기
           link: {
-            mobileWebUrl: 'https://wanju-town.tistory.com/'.concat(last),
-            webUrl: 'https://wanju-town.tistory.com/',
+            mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+            webUrl: 'https://againpapo.herokuapp.com/'.concat(last),
           }
         },
         {
           title: '나도 선물하기', //여기는 홈 화면 연결해주기
           link: {
-            mobileWebUrl: 'https://wanju-town.tistory.com/', 
-            webUrl: 'https://wanju-town.tistory.com/', 
+            mobileWebUrl: 'https://againpapo.herokuapp.com/', 
+            webUrl: 'https://againpapo.herokuapp.com/', 
           }
         }
       ]
