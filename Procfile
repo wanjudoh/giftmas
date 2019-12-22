@@ -1,0 +1,1 @@
+web: gunicorn letterProject.wsgi --log-file -
