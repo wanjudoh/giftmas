@@ -42,7 +42,7 @@ def new(request):
             letter.name = form.cleaned_data['name']
             letter.sender = socket.gethostbyname(socket.gethostname()) #보내는사람 IP주소 저장
             letter.save()
-            return render(request, 'link.html', {'pk':letter.id})
+            return render(request, 'link.html', {'pk':letter.id, 'name':letter.name})
         else:
             return HttpResponse('폼이 유효하지 않다는데요..? 다시입력해보세요 ㅎ')
     else:
