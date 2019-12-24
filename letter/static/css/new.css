@@ -1,0 +1,74 @@
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body{
+    background-image: url(../image/xmas.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(250,246,237);
+}
+table{
+    width: 100%;
+    font-family: 'DungGeunMo';
+}
+.table{
+    display: inline-block;
+}
+label{
+    display: none;
+}
+.form{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 500px;
+}
+td,th{
+    margin-bottom: 20px;
+}
+tr{
+    margin-bottom: 30px;
+}
+input{
+    margin-bottom: 1rem;
+}
+input.newbutton{
+    font-size: 3.5rem;
+    font-family: 'DungGeunMo';
+    text-align: center;
+    letter-spacing: 1rem;
+    background-color: #256340;
+    width: 80%;
+    height: 100px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 40px;
+}
+input.newbutton:hover{
+    font-weight: bold;
+    background-color: white;
+    color: #256340;
+}
+
+
+textarea#id_title.form-control, textarea#id_name.form-control{
+    font-size: 3rem;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: 'DungGeunMo';
+    width: 80%;
+    margin-bottom: 50px;
+    background-color: rgb(250,246,237);
+}
+
+textarea#id_content.form-control{
+    margin: 0px;
+    font-size: 3rem;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 200px;
+    width: 80%;
+    font-family: 'DungGeunMo';
+    background-color: rgb(250,246,237);
+}
