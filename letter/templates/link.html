@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-
+  {% load static %}
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/link.css' %}">
 </head>
 
 <body>
@@ -15,10 +16,14 @@
 <!--<div id="gift" style="visibility:hidden;">{{gift}}</div>-->
 
 <!--이게 카카오 링크 버튼!-->
+<div class="kakao">
 <a id="kakao-link-btn" href="javascript:;">
 <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
+<div class="send">카카오톡으로 전송하기</div>
+</div>
 
+<img class="xmas" src="/static/image/tree.png" style="width: 100%;">
 
 <!--카카오톡으로 보내는 부분-->
 <script type='text/javascript'>

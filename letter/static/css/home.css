@@ -1,0 +1,32 @@
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+body{
+    background-color: #256340;
+}
+.xmas{
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+    font-size: 3rem;
+    font-family: 'CookieRunOTF-Bold';
+}
+.home{
+    text-align: center;
+}
+.make{
+    font-family: 'DungGeunMo';
+    display: inline-block;
+    width: 400px;
+    height: 120px;
+    background: white;
+    border-radius: 100px;
+    text-align: center;
+    color: #256340;
+    line-height: 120px;
+    font-size: 4rem;
+}
+
+.make a:link { color:#256340; text-decoration: none;}
+.make a:visited { color: #256340; text-decoration: none;}
+.make a:hover { color: #256340; text-decoration: none;}

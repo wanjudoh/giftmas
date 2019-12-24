@@ -9,7 +9,7 @@ class LetterForm(forms.ModelForm):
             'title' : forms.Textarea(
                 attrs={
                     'class' : 'form-control',
-                    'placeholder' : '제목',
+                    'placeholder' : '편지 제목',
                     'rows' : '1',
                 }
             ),
@@ -22,7 +22,7 @@ class LetterForm(forms.ModelForm):
             'name' : forms.Textarea(
                 attrs={
                     'class' : 'form-control',
-                    'placeholder' : '이름',
+                    'placeholder' : '받는 사람',
                     'rows' : '1',
                 }
             )
