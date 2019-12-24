@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+</head>
 <body>
-{{letter.title}}<br>
-{{letter.content}}<br>
-<a href="{% url 'new' %}">답장하기</a>
+<div class="form2">
+
+<table class="table">
+    <tr>
+        <th class="titledetail">{{letter.title}}</th>
+    </tr>
+    <tr>
+        <td class="contentdetail">{{letter.content|linebreaks}}</td>
+    </tr>
+</table>
+<button class="newbutton" onclick="location.href='{% url 'new' %}'">답장하기</button>
+
+</div>
 </body>
 
 </html>
