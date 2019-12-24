@@ -26,10 +26,13 @@
     var name = document.getElementById("name").innerHTML;
 
     var last = "detail/".concat(pk);
+    var imgList = ['https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F8QdND%2FbtqAI3m1qaK%2F3wraYvJiRSnMNG90aJUUF1%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FrbN2a%2FbtqAHp5R3aR%2F45Mmuf9SciKAScC2XwDwu0%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FecjIxo%2FbtqAGCq1lZk%2FSKt9FdXrgC86mtl1VbcJX1%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fv80zM%2FbtqAI3tNG2u%2FZWOEjZlv0W9Uk9q8ExF46K%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FpcInD%2FbtqAIQanePf%2FeFySuZJPcBkO7RTeDRnLA0%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FHemrK%2FbtqAGce3bho%2Fe64klDGkWl7dqs9S9dqDf1%2Fimg.png',];
 
-    var imgList = ['https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FW72fX%2FbtqAE6FuSBe%2F8FBIKDlyspekoqzXU652z1%2Fimg.jpg',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbLwpRi%2FbtqAFosoAGj%2F9eu7HAUP2AeNbGYt4GIOo1%2Fimg.jpg',];
-    //var imgIndex = document.getElementById("gift").innerHTML;
     var imgIndex = Math.floor(Math.random()*imgList.length);
     Kakao.init('b1256f439183fbd64043c20c046e7fa6');
     Kakao.Link.createDefaultButton({
