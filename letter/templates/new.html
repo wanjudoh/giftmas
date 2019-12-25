@@ -5,6 +5,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
 </head>
+
 <body>
 <div class="form">
 <form method="POST">
@@ -15,7 +16,8 @@
     {{ form.errors }}
     {{ form.non_field_errors }}
     <br>
-    <input type="submit" value="보내기" class="newbutton">
+    <!-- <input type="submit" value="보내기" class="newbutton"> -->
+    <button class="newbutton">보내기</button>
 </form></div>
 </body>
 
