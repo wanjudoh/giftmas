@@ -1,18 +1,17 @@
 from django.db import models
 from django.utils import timezone
 
-# Create your models here.
-
 class Letter(models.Model):
     title = models.CharField(max_length=20)
-    content = models.TextField(max_length=200)
-    name = models.CharField(max_length=5)
+    content = models.TextField(max_length=1000)
+    name = models.CharField(max_length=8)
 
     design = models.IntegerField(default=0)
     gift = models.IntegerField(default=0)
     receiver = models.CharField(max_length=100)
     sender = models.CharField(max_length=100)
     sentAt = models.DateTimeField(auto_now=True)
+    pw = models.IntegerField(max_length=4,default=0)
 
     def save(self, **kwargs):
         if not self.id:
