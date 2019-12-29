@@ -4,7 +4,7 @@ from .models import Letter
 class LetterForm(forms.ModelForm):
     class Meta:
         model = Letter
-        fields = ['title', 'name', 'content']
+        fields = ['title', 'name', 'content', 'pw']
         widgets = {
             'title' : forms.Textarea(
                 attrs={

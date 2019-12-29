@@ -8,10 +8,10 @@ class Letter(models.Model):
 
     design = models.IntegerField(default=0)
     gift = models.IntegerField(default=0)
-    receiver = models.CharField(max_length=100)
-    sender = models.CharField(max_length=100)
+    #receiver = models.CharField(max_length=100)
+    #sender = models.CharField(max_length=100)
     sentAt = models.DateTimeField(auto_now=True)
-    pw = models.IntegerField(max_length=4,default=0)
+    pw = models.CharField(default='0', max_length=4)
 
     def save(self, **kwargs):
         if not self.id:

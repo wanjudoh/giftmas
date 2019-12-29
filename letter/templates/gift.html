@@ -1,6 +1,32 @@
 <!--기프티콘 고르는 페이지-->
 어떤 선물을 보낼까요?
-<form method="GET" action="{% url 'new' %}">
-    <input type="number" name="gift" min="1" max="10" value="4">
-    <input type="submit" value="편지쓰기!">
+<script>
+    var num = 0;
+    var imgList = ['https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7xVGX%2FbtqAGYIamcl%2FNpdBITrFVuc0b9SIsjXiHk%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fruoo8%2FbtqAGYg5Zbo%2F6z9QyLsMnoeQKCovOWeI90%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbxefER%2FbtqAIfh6WWF%2FNwfI0n32rfVs4Y6tszbKM1%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F0hLWG%2FbtqAI3nIBOX%2FC6nTteM4cSrqP0wx1NcVg0%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbhWDU2%2FbtqAJvjOors%2FVqOaysW2e0PJTGAeVAtjgk%2Fimg.png',
+    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FpOrc1%2FbtqAJxaOkZt%2FNr8SlwR6JaYyo4mEE0o9Rk%2Fimg.png',];
+
+    function changeImg(key){
+        var img1 = document.getElementById('img1');
+        if(key==1){
+            num = (num+1)%imgList.length;}
+        else if(key==0){
+            if(num==0) num=num+imgList.length;
+            num = (num-1)%imgList.length;}
+        img1.src = imgList[num];
+        document.giftForm.gift.value = num;
+    }
+</script>
+
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7xVGX%2FbtqAGYIamcl%2FNpdBITrFVuc0b9SIsjXiHk%2Fimg.png" id="img1">
+<button onclick="changeImg(0)">왼쪽</button>
+<button onclick="changeImg(1)">오른쪽</button>
+
+<form name="giftForm" method="GET" action="{% url 'new' %}">
+    <input type="hidden" name="gift" value="0">
+    <input type="submit" value="선택!">
 </form>

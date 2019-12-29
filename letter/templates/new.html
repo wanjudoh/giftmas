@@ -3,20 +3,48 @@
 <!--편지 작성하고 편지지디자인 고르는 페이지-->
 {% load static %}
 <head>
-  <link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+  <link id="css" rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+  <script>
+    var num = 0;
+    var cssList = ["{% static 'css/new.css' %}",
+    "{% static 'css/new2.css' %}",
+    "{% static 'css/new3.css' %}",];
+
+    window.onload = function() {
+      document.getElementById("change1").onclick = function(){
+        var link = document.getElementById("css");
+        if(num==0) num=num+cssList.length;
+          num = (num-1)%cssList.length;
+        link.href = cssList[num];
+        document.getElementById("design").value = num;
+      }
+      document.getElementById("change2").onclick = function(){
+        var link = document.getElementById("css");
+        num = (num+1)%cssList.length;
+        link.href = cssList[num];
+        document.getElementById("design").value = num;
+      }
+    }
+    
+  </script>
 </head>
 
 <body>
-<div class="form">
-<form method="POST">
+
+<button id='change1'>왼쪽</button>
+<button id='change2'>오른쪽</button>
+  
+<div class="form" name="form">
+<form method="POST" name="newform">
     {% csrf_token %}
     <table class="table">
     {{ form }}
+    <input type="hidden" name='gift' value={{gift}}>
+    <input type="hidden" name="design" value="0" id="design">
     </table>
     {{ form.errors }}
     {{ form.non_field_errors }}
     <br>
-    <!-- <input type="submit" value="보내기" class="newbutton"> -->
     <button class="newbutton">보내기</button>
 </form></div>
 </body>
