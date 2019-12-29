@@ -39,13 +39,14 @@
     {% csrf_token %}
     <table class="table">
     {{ form }}
+    </table>
     <input type="hidden" name='gift' value={{gift}}>
     <input type="hidden" name="design" value="0" id="design">
-    </table>
+    {{error}}
     {{ form.errors }}
     {{ form.non_field_errors }}
     <br>
-    <button class="newbutton">보내기</button>
+    <button class="newbutton">저장</button>
 </form></div>
 </body>
 

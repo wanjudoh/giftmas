@@ -12,12 +12,15 @@ def home(request):
 def new(request):
     if request.method == 'POST':
         form = LetterForm(request.POST)
+        gift = request.POST['gift']
         if form.is_valid():
+            if len(form.cleaned_data['pw']) < 4:
+                return render(request, 'new.html', {'form':form, 'error':'비밀번호는 4자로 입력합니다.', 'gift':gift})
             letter = form.save(commit=False)
             letter.title = form.cleaned_data['title']
             letter.content = form.cleaned_data['content']
             letter.name = form.cleaned_data['name']
-            letter.gift = request.POST['gift']
+            letter.gift = gift
             letter.design = request.POST['design']
             #letter.sender = socket.gethostbyname(socket.gethostname()) #보내는사람 IP주소 저장
             letter.save()
