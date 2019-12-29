@@ -47,8 +47,11 @@
         title: name+'님 선물과 편지가 도착했습니다.',
         imageUrl: imgList[imgIndex], //기프티콘에 뜰 이미지가 들어감
         link: {
-            mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
-            webUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+          mobileWebUrl: 'http://127.0.0.1:8000/'.concat(last),
+          webUrl: 'http://127.0.0.1:8000/'.concat(last),
+          /*
+          mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+          webUrl: 'https://againpapo.herokuapp.com/'.concat(last),*/
         },
         imageWidth: 200,
         imageHeight: 300,
@@ -57,15 +60,19 @@
         {
           title: '편지보러 가기', //여기다가 디테일 페이지 연결해주기
           link: {
-            mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
-            webUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+            mobileWebUrl: 'http://127.0.0.1:8000/'.concat(last),
+            webUrl: 'http://127.0.0.1:8000/'.concat(last),
+            // mobileWebUrl: 'https://againpapo.herokuapp.com/'.concat(last),
+            // webUrl: 'https://againpapo.herokuapp.com/'.concat(last),
           }
         },
         {
           title: '나도 선물하기', //여기는 홈 화면 연결해주기
           link: {
-            mobileWebUrl: 'https://againpapo.herokuapp.com/', 
-            webUrl: 'https://againpapo.herokuapp.com/', 
+            mobileWebUrl: 'http://127.0.0.1:8000/',
+            webUrl: 'http://127.0.0.1:8000/',
+            // mobileWebUrl: 'https://againpapo.herokuapp.com/', 
+            // webUrl: 'https://againpapo.herokuapp.com/', 
           }
         }
       ]

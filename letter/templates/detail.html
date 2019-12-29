@@ -2,7 +2,11 @@
 <html>
 {% load static %}
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+    {% if letter.design == 0 %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+    {% elif letter.design == 1 %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/detail1.css' %}">
+    {% endif %}
 </head>
 <body>
 <div class="form">
