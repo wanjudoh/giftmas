@@ -11,7 +11,8 @@ class Letter(models.Model):
     #receiver = models.CharField(max_length=100)
     #sender = models.CharField(max_length=100)
     sentAt = models.DateTimeField(auto_now=True)
-    pw = models.CharField(default='0', max_length=4)
+    #pw = models.CharField(default='0', max_length=4)
+    pw = models.CharField(null=True, max_length=4)
 
     def save(self, **kwargs):
         if not self.id:

@@ -25,5 +25,12 @@ class LetterForm(forms.ModelForm):
                     'placeholder' : '받는 사람',
                     'rows' : '1',
                 }
+            ),
+            'pw' : forms.Textarea(
+                attrs={
+                    'class' : 'form-control',
+                    'placeholder' : '4자리 비밀번호 설정',
+                    'rows' : '1',
+                }
             )
         }
