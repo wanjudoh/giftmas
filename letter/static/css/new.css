@@ -50,36 +50,12 @@ input{
     background-color: white;
     color: #256340;
 }
-/* 돤주 수정 */
-/* .form2{
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 500px;
-} 
-button.newbutton{
-    font-size: 3.5rem;
-    font-family: 'DungGeunMo';
-    text-align: center;
-    letter-spacing: 1rem;
-    background-color: #256340;
-    width: 80%;
-    height: 100px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    color: white;
-    border-radius: 40px;
-}
-button.newbutton:hover{
-    font-weight: bold;
-    background-color: white;
-    color: #256340;
-} */
 
 .contentdetail{
     margin: 0px;
     font-size: 3rem;
     border: none;
-    height: 200px;
+    height: 300px;
     width: 80%;
     font-family: 'DungGeunMo';
     background-color: rgb(250,246,237);
@@ -92,7 +68,7 @@ button.newbutton:hover{
     margin-bottom: 50px;
     background-color: rgb(250,246,237);
 }
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, input#id_pw{
     font-size: 3rem;
     border: none;
     border-bottom: 2px solid black;
@@ -107,7 +83,7 @@ textarea#id_content.form-control{
     font-size: 3rem;
     border: none;
     border-bottom: 2px solid black;
-    height: 200px;
+    height: 400px;
     width: 80%;
     font-family: 'DungGeunMo';
     background-color: rgb(250,246,237);
