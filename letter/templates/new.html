@@ -4,11 +4,14 @@
 {% load static %}
 <head>
   <link id="css" rel="stylesheet" type="text/css" href="{% static 'css/new2.css' %}">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   <script>
     var num = 0;
     var cssList = ["{% static 'css/new.css' %}",
     "{% static 'css/new2.css' %}",
-    "{% static 'css/new3.css' %}",];
+    "{% static 'css/new3.css' %}",
+    "{% static 'css/new4.css' %}",
+  ];
 
     window.onload = function() {
       document.getElementById("change1").onclick = function(){
@@ -31,9 +34,18 @@
 
 <body>
 
-<button id='change1'>왼쪽</button>
-<button id='change2'>오른쪽</button>
-  
+<a id='change1'>
+  <i class="fas fa-chevron-circle-left" style="font-size: 70px; position: fixed; left: 10px; top: 800px;"></i>
+</a>
+<a id='change2'>
+  <i class="fas fa-chevron-circle-right" style="font-size: 70px; position: fixed; right: 10px; top: 800px;"></i>
+</a>
+<div class="container">
+  <div class="flux"> 
+    2020, 반짝반짝 빛나는 <br> 한 해가 되기를 기원합니다
+  </div>
+  <!-- <img src="{% static 'image/cutemouse.png' %}" class="mouse"> -->
+</div>
 <div class="form" name="form">
 <form method="POST" name="newform">
     {% csrf_token %}
@@ -47,6 +59,8 @@
     {{ form.non_field_errors }}
     <br>
     <button class="newbutton">저장</button>
+
+
 </form></div>
 </body>
 

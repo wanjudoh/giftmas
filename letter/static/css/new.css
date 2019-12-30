@@ -8,6 +8,9 @@ body{
     background-repeat: no-repeat;
     background-color: rgb(250,246,237);
 }
+div.flux{
+    display: none;
+}
 table{
     width: 100%;
     font-family: 'DungGeunMo';
@@ -68,7 +71,7 @@ input{
     margin-bottom: 50px;
     background-color: rgb(250,246,237);
 }
-textarea#id_title.form-control, textarea#id_name.form-control, input#id_pw{
+textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
     font-size: 3rem;
     border: none;
     border-bottom: 2px solid black;
