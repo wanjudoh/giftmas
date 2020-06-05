@@ -11,9 +11,9 @@
   <img width="200" src="https://user-images.githubusercontent.com/34891481/83839992-66078f00-a738-11ea-8159-0fbe44bf6cca.png">
 </div>
 <div>
-  <img width="300" src="https://user-images.githubusercontent.com/34891481/83839990-64d66200-a738-11ea-99a5-12690cfb8d4b.png">
-  <img width="300" alt="스크린샷 2020-06-05 오후 2 23 18" src="https://user-images.githubusercontent.com/34891481/83840394-6c4a3b00-a739-11ea-8b6d-ca960cb9f27f.png">
-  <img width="300" alt="스크린샷 2020-06-05 오후 2 23 54" src="https://user-images.githubusercontent.com/34891481/83839935-44a6a300-a738-11ea-96ea-80883c53a5f9.png">
+  <img width="200" src="https://user-images.githubusercontent.com/34891481/83839990-64d66200-a738-11ea-99a5-12690cfb8d4b.png">
+  <img width="200" alt="스크린샷 2020-06-05 오후 2 23 18" src="https://user-images.githubusercontent.com/34891481/83840394-6c4a3b00-a739-11ea-8b6d-ca960cb9f27f.png">
+  <img width="200" alt="스크린샷 2020-06-05 오후 2 23 54" src="https://user-images.githubusercontent.com/34891481/83839935-44a6a300-a738-11ea-96ea-80883c53a5f9.png">
 </div>
 
 ## 2019년 12월 25일 배포 🤶🏻
