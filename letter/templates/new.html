@@ -3,17 +3,20 @@
 <!--편지 작성하고 편지지디자인 고르는 페이지-->
 {% load static %}
 <head>
-  <link id="css" rel="stylesheet" type="text/css" href="{% static 'css/new2.css' %}">
+  <link id="css" rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+
   <script>
     var num = 0;
-    var cssList = ["{% static 'css/new.css' %}",
-    "{% static 'css/new2.css' %}",
-    "{% static 'css/new3.css' %}",];
+    var cssList = [
+      "{% static 'css/new.css' %}",
+      "{% static 'css/new2.css' %}",
+      "{% static 'css/new3.css' %}",
+    ];
 
     window.onload = function() {
       document.getElementById("change1").onclick = function(){
         var link = document.getElementById("css");
-        if(num==0) num=num+cssList.length;
+        if(num==0) num=cssList.length;
           num = (num-1)%cssList.length;
         link.href = cssList[num];
         document.getElementById("design").value = num;
@@ -25,12 +28,11 @@
         document.getElementById("design").value = num;
       }
     }
-    
   </script>
+
 </head>
 
 <body>
-
 <button id='change1'>왼쪽</button>
 <button id='change2'>오른쪽</button>
   
@@ -40,14 +42,16 @@
     <table class="table">
     {{ form }}
     </table>
-    <input type="hidden" name='gift' value={{gift}}>
+    {% comment %} <input type="hidden" name='gift' value={{gift}}> {% endcomment %}
     <input type="hidden" name="design" value="0" id="design">
+    
     {{error}}
     {{ form.errors }}
     {{ form.non_field_errors }}
     <br>
-    <button class="newbutton">저장</button>
-</form></div>
+    <button class="newbutton">다음</button>
+</form>
+</div>
 </body>
 
 </html>

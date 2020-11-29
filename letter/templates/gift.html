@@ -1,4 +1,5 @@
 <!--기프티콘 고르는 페이지-->
+<!--기프티콘 갯수 바뀌면 view -> gift 함수 안에 randomint 범위 재지정해주기!!! -->
 어떤 선물을 보낼까요?
 <script>
     var num = 0;
@@ -26,7 +27,14 @@
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F7xVGX%2FbtqAGYIamcl%2FNpdBITrFVuc0b9SIsjXiHk%2Fimg.png" id="img1">
 <button onclick="changeImg(1)">오른쪽</button>
 
-<form name="giftForm" method="GET" action="{% url 'new' %}">
+{% comment %} <form name="giftForm" method="GET" action="{% url 'new' %}">
+    <input type="hidden" name="gift" value="0">
+    <input type="submit" value="선택!">
+</form> {% endcomment %}
+
+<form name="giftForm" method="POST" action="{% url 'giftsave' %}">
+    {% csrf_token %}   
+    <input type="hidden" name='pk' value={{pk}}>
     <input type="hidden" name="gift" value="0">
     <input type="submit" value="선택!">
 </form>
