@@ -14,8 +14,8 @@ def new(request):
         form = LetterForm(request.POST)
         gift = request.POST['gift']
         if form.is_valid():
-            if len(form.cleaned_data['pw']) < 4:
-                return render(request, 'new.html', {'form':form, 'error':'비밀번호는 4자로 입력합니다.', 'gift':gift})
+            #if len(form.cleaned_data['pw']) < 4:
+            #    return render(request, 'new.html', {'form':form, 'error':'비밀번호는 4자로 입력합니다.', 'gift':gift})
             letter = form.save(commit=False)
             letter.title = form.cleaned_data['title']
             letter.content = form.cleaned_data['content']
@@ -37,10 +37,13 @@ def gift(request):
 
 def detail(request, letter_id):
     letter = get_object_or_404(Letter, pk=letter_id)
-    if request.method == 'GET':
-        return render(request, 'detail.html', {'letter':letter, 'key':1})
-    else:
-        if letter.pw == request.POST['pw']:
-            return render(request, 'detail.html', {'letter':letter, 'key':0})
-        else:
-            return render(request, 'detail.html', {'letter':letter, 'key':1})
+
+    # if request.method == 'GET':
+    #     return render(request, 'detail.html', {'letter':letter, 'key':1})
+    # else:
+    #     if letter.pw == request.POST['pw']:
+    #         return render(request, 'detail.html', {'letter':letter, 'key':0})
+    #     else:
+    #         return render(request, 'detail.html', {'letter':letter, 'key':1})
+    
+    return render(request, 'detail.html', {'letter':letter})

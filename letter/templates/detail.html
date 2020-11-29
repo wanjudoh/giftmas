@@ -8,9 +8,9 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/detail1.css' %}">
     {% endif %}
 
-    <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    {% comment %} <script src="https://code.jquery.com/jquery-latest.js"></script>  {% endcomment %}
  
-    <style>
+    {% comment %} <style>
         /* The Modal (background) */
         .modal {
             display: none; /* Hidden by default */
@@ -33,11 +33,10 @@
             border: 1px solid #888;
             width: 30%; /* Could be more or less, depending on screen size */                          
         }
- 
-</style>
+    </style> {% endcomment %}
 </head>
 <body>
-{% if key %}
+{% comment %} {% if key %}
 <div id="myModal" class="modal">
     <div class="modal-content">
         <form method="POST">
@@ -47,7 +46,8 @@
         </form>
     </div>
 </div>
-{% endif %}
+{% endif %} {% endcomment %}
+
 <div class="form">
 
 <table class="table">
@@ -63,11 +63,11 @@
 </div>
 </body>
 
-<script type="text/javascript">
+{% comment %} <script type="text/javascript">
     jQuery(document).ready(function() {
             $('#myModal').show();
     });
 
-</script>
+</script> {% endcomment %}
 
 </html>
