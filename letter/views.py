@@ -44,7 +44,7 @@ def giftsave(request):
         letter = Letter.objects.get(pk=pk)
         if gift == '0':
             import random
-            letter.gift = random.randint(1, 6)
+            letter.gift = random.randint(1, 5)
         else:
             letter.gift = gift
         letter.save()
