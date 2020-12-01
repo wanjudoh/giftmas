@@ -1,36 +1,36 @@
 <!--기프티콘 고르는 페이지-->
 <!--기프티콘 갯수 바뀌면 view -> gift 함수 안에 randomint 범위 재지정해주기!!! -->
+{% load static %}
 어떤 선물을 보낼까요?
+
 <script>
     var num = 0;
     var imgList = [
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbqfTlM%2FbtqOxrPLY80%2FEkXuFsYdIyDXJO1SrCxfxk%2Fimg.png',
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FblCMKn%2FbtqOvR8Y7jE%2Fb0Xqtk7NiVHvnqP67KCpm0%2Fimg.png',
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbbfNqA%2FbtqOtDw8I5g%2FbMc0wHvaF806akhbnLBsw0%2Fimg.png',
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVfquO%2FbtqOvecjaWi%2FtJEoGngnjeRYz7hdR3Eh60%2Fimg.png',
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsUJuS%2FbtqOzBkkahM%2FIULtr2sE2CbTTizAMmOKD1%2Fimg.png',
-        'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbgxgEa%2FbtqOIaMXqSq%2FLEmzrdqYjSe70q2t7O4kDk%2Fimg.png',
+        ['{% static "image/gift/0random.png" %}', '선물이 랜덤으로 보내집니다!'],
+        ['{% static "image/gift/1corona.png" %}','코로나 백신 주사 총 4회 (가족형)'],
+        ['{% static "image/gift/2northpole.png" %}','북극 빙하 여행 [패키지 4박 5일]'],
+        ['{% static "image/gift/3santa.png" %}','대형 선물 주머니 XXXL (6m)'],
+        ['{% static "image/gift/4chicken.png" %}','닭가슴살 정기구독 1년'],
+        ['{% static "image/gift/5ear.png" %}','호빵 귀마개 (단팥, 야채, 피자 택1)'],
     ]
     function changeImg(key){
         var img1 = document.getElementById('img1');
+        var title = document.getElementById('title');
         if(key==1){
             num = (num+1)%imgList.length;}
         else if(key==0){
             if(num==0) num=num+imgList.length;
             num = (num-1)%imgList.length;}
-        img1.src = imgList[num];
+        img1.src = imgList[num][0];
+        title.innerText = imgList[num][1];
         document.giftForm.gift.value = num;
     }
 </script>
 
 <button onclick="changeImg(0)">왼쪽</button>
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbqfTlM%2FbtqOxrPLY80%2FEkXuFsYdIyDXJO1SrCxfxk%2Fimg.png" id="img1">
+<img src='{% static "image/gift/0random.png" %}' id="img1">
+<h3 id="title">랜덤 BOX</h3>
 <button onclick="changeImg(1)">오른쪽</button>
-
-{% comment %} <form name="giftForm" method="GET" action="{% url 'new' %}">
-    <input type="hidden" name="gift" value="0">
-    <input type="submit" value="선택!">
-</form> {% endcomment %}
 
 <form name="giftForm" method="POST" action="{% url 'giftsave' %}">
     {% csrf_token %}   

@@ -1,0 +1,39 @@
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+body{
+    background-image: url(../image/pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.xmas{
+    color: rgb(154, 134, 187);
+    text-align: center;
+    margin-top: 500px;
+    font-size: 3rem;
+    font-family: 'InkLipquid';
+}
+.home{
+    text-align: center;
+}
+h1{
+    margin: 0px;
+}
+.make{
+    margin-top: 30px;
+    font-family: 'DungGeunMo';
+    display: inline-block;
+    width: 400px;
+    height: 120px;
+    border: 5px solid rgb(255, 242, 252);
+    border-radius: 100px;
+    text-align: center;
+    color: rgb(154, 134, 187);
+    line-height: 120px;
+    font-size: 4rem;
+}
+
+.make a:link { color:rgb(154, 134, 187); text-decoration: none;}
+.make a:visited { color: rgb(154, 134, 187); text-decoration: none;}
+.make a:hover { color: rgb(109, 106, 133); text-decoration: none;}
