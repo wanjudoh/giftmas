@@ -1,22 +1,24 @@
-@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 body{
-    background: url(../image/pink.jpg) no-repeat center center fixed; 
+    background: url(../image/christmas.jpeg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 .xmas{
-    color: rgb(154, 134, 187);
+    color: #ffffff;
     vertical-align: middle;
     font-size: 3rem;
     font-family: 'InkLipquid';
+    text-shadow: 2px 2px 6px gray;
 }
 .home{
     text-align: center;
-    margin-top: 30rem;
+    margin-top: 40rem;
 }
 
 h1{
@@ -24,21 +26,23 @@ h1{
 }
 .make{
     margin-top: 5rem;
-    font-family: 'DungGeunMo';
+    font-family: 'BMJUA';
     display: inline-block;
     width: 400px;
     height: 120px;
-    border: 5px solid rgb(255, 242, 252);
+    border: 5px solid #ffffff;
     border-radius: 100px;
     text-align: center;
-    color: rgb(154, 134, 187);
+    color: #ffffff;
     line-height: 120px;
     font-size: 4rem;
+    text-shadow: 2px 2px 6px gray;
+    box-shadow: 2px 2px 6px gray;
 }
 
-.make a:link { color:rgb(154, 134, 187); text-decoration: none;}
-.make a:visited { color: rgb(154, 134, 187); text-decoration: none;}
-.make a:hover { color: rgb(109, 106, 133); text-decoration: none;}
+.make a:link { color:#ffffff; text-decoration: none;}
+.make a:visited { color: #ffffff; text-decoration: none;}
+.make a:hover { color: #ffffff; text-decoration: none;}
 
 @media only screen and (min-width: 1025px){
 
