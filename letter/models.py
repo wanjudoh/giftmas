@@ -3,7 +3,7 @@ from django.utils import timezone
 
 class Gift(models.Model):
     id = models.IntegerField(default=0, primary_key=True)
-    title = models.CharField(max_length=25)
+    title = models.CharField(max_length=30)
     img = models.TextField()
 
     def __str__(self):
