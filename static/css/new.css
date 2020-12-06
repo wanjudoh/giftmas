@@ -1,22 +1,27 @@
-@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body{
-    background-image: url(../image/xmas.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: rgb(250,246,237);
+    background-color: black;
 }
-div.flux{
-    display: none;
+.container{
+    margin-top: 20rem;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+img.mouse{
+    width: 200px;
+}
+svg{
+    color: white;
+}
+
 table{
     width: 100%;
-    font-family: 'DungGeunMo';
-}
-.table{
+    font-family: 'BMJUA';
     display: inline-block;
+    color: white;
 }
 label{
     display: none;
@@ -24,7 +29,7 @@ label{
 .form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 500px;
+    margin-top: 100px;
 }
 td,th{
     margin-bottom: 20px;
@@ -37,10 +42,10 @@ input{
 }
 .newbutton{
     font-size: 3.5rem;
-    font-family: 'DungGeunMo';
+    font-family: 'BMJUA';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: #256340;
+    background-color:  #1041FF;
     width: 80%;
     height: 100px;
     margin-top: 60px;
@@ -51,43 +56,68 @@ input{
 .newbutton:hover{
     font-weight: bold;
     background-color: white;
-    color: #256340;
+    color: #1041FF;
 }
 
-.contentdetail{
-    margin: 0px;
+textarea#id_title.form-control, textarea#id_name.form-control, th.titledetail{
     font-size: 3rem;
+    color: white;
     border: none;
-    height: 300px;
+    border-bottom: 2px solid gray;
+    font-family: 'BMJUA';
     width: 80%;
-    font-family: 'DungGeunMo';
-    background-color: rgb(250,246,237);
-}
-.titledetail{
-    font-size: 3rem;
-    border: none;
-    font-family: 'DungGeunMo';
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: rgb(250,246,237);
-}
-textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
-    font-size: 3rem;
-    border: none;
-    border-bottom: 2px solid black;
-    font-family: 'DungGeunMo';
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: rgb(250,246,237);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
 }
 
-textarea#id_content.form-control{
+textarea#id_content.form-control, .contentdetail{
     margin: 0px;
     font-size: 3rem;
+    color: white;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid gray;
     height: 400px;
     width: 80%;
-    font-family: 'DungGeunMo';
-    background-color: rgb(250,246,237);
+    font-family: 'BMJUA';
+    background-color: transparent;
+}
+
+.flux {
+    font-family: 'BMJUA';
+    color: #426DFB;
+    font-size: 60px;
+    line-height: 170%;
+    text-shadow: 0 0 3vw #2356FF;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+  }
+  
+@keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+}
+
+/* detail.html 에서 적용되는 부분 */
+tbody{
+    width: 100%;
+    display: table;
+}
+
+.detail-form{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 300px;
 }

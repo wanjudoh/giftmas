@@ -1,17 +1,14 @@
-@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body{
     background-color: black;
 }
 .container{
-    margin-top: 100px;
+    margin-top: 20rem;
     width: 70%;
     text-align: center;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 img.mouse{
     width: 200px;
@@ -122,5 +119,5 @@ tbody{
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 400px;
 }

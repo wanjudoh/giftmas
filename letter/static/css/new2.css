@@ -17,6 +17,7 @@ table{
     width: 100%;
     font-family: 'DungGeunMo';
     display: inline-block;
+    margin-top: 3rem;
 }
 label{
     display: none;
@@ -85,5 +86,5 @@ tbody{
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 400px;
 }
