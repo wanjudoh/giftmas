@@ -8,9 +8,11 @@ body{
     background-repeat: no-repeat;
     background-color: rgb(250,246,237);
 }
-div.flux{
-    display: none;
+
+.flux{
+    visibility: hidden;;
 }
+
 table{
     width: 100%;
     font-family: 'DungGeunMo';
