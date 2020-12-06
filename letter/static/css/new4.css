@@ -19,6 +19,7 @@ table{
     width: 100%;
     font-family: 'InkLipquid';
     display: inline-block;
+    margin-top: 5rem;
 }
 label{
     display: none;
@@ -47,20 +48,20 @@ input{
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: white;
-    border: 6px solid white;
+    color: rgb(109, 106, 133);
+    border: 6px solid rgb(109, 106, 133);
     border-radius: 40px;
 }
 
-.newbutton a:link { color:rgb(154, 134, 187); text-decoration: none;}
-.newbutton a:visited { color: rgb(154, 134, 187); text-decoration: none;}
+.newbutton a:link { color:rgb(109, 106, 133); text-decoration: none;}
+.newbutton a:visited { color: rgb(109, 106, 133); text-decoration: none;}
 .newbutton a:hover { color: rgb(109, 106, 133); text-decoration: none;}
 
 
 textarea#id_title.form-control, textarea#id_name.form-control, .titledetail{
     font-size: 3.5rem;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(109, 106, 133);
     font-family: 'InkLipquid';
     width: 85%;
     margin-top: 25px;
@@ -72,8 +73,8 @@ textarea#id_content.form-control, .contentdetail{
     margin: 0px;
     font-size: 3.5rem;
     border: none;
-    border-bottom: 2px solid black;
-    height: 600px;
+    border-bottom: 2px solid rgb(109, 106, 133);
+    height: 400px;
     width: 85%;
     font-family: 'InkLipquid';
     background-color: transparent;
@@ -88,5 +89,5 @@ tbody{
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 400px;
 }

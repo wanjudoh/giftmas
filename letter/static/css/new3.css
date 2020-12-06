@@ -1,9 +1,12 @@
-@font-face { font-family: 'Godo'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff'); } @font-face { font-family: 'Godo'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff'); } .godo * { font-family: 'Godo', sans-serif; }
-@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
-    background-color: #34558b;
+    background: url(../image/snowman.png) no-repeat center center fixed; 
 }
 svg{
     color: white;
@@ -14,8 +17,9 @@ svg{
 
 table{
     width: 100%;
-    font-family: 'Godo';
+    font-family: 'Cafe24Oneprettynight';
     display: inline-block;
+    margin-top: 4rem;
 }
 
 label{
@@ -37,7 +41,7 @@ input{
 }
 .newbutton{
     font-size: 3.5rem;
-    font-family: 'Godo';
+    font-family: 'Cafe24Oneprettynight';
     text-align: center;
     letter-spacing: 1rem;
     background-color: transparent;
@@ -46,7 +50,8 @@ input{
     margin-top: 60px;
     margin-bottom: 30px;
     color: white;
-    border: 6px solid white;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 .newbutton:hover{
     font-weight: bold;
@@ -57,13 +62,14 @@ input{
 
 textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
     font-size: 2.8rem;
-    border: 6px solid white;
-    font-family: 'Godo';
+    border: 3px solid white;
+    font-family: 'Cafe24Oneprettynight';
     width: 80%;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: transparent;
     color: white;
+    border-radius: 10px;
 }
 ::placeholder{
     color: white;
@@ -71,12 +77,13 @@ textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.fo
 textarea#id_content.form-control{
     margin: 0px;
     font-size: 2.8rem;
-    border: 6px solid white;
+    border: 3px solid white;
     height: 400px;
     width: 80%;
-    font-family: 'Godo';
+    font-family: 'Cafe24Oneprettynight';
     background-color: transparent;
     color: white;
+    border-radius: 10px;
 }
 
 /* detail.html 에서 적용되는 부분 */
@@ -88,5 +95,5 @@ tbody{
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 400px;
 }
