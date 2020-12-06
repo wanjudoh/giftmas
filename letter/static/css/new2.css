@@ -3,7 +3,10 @@
 @font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body{
-    background-image: url(../image/christmas2.jpg) no-repeat center center fixed ;
+    background-image: url(../image/xmas.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(250,246,237);
 }
 
 .flux{
@@ -14,6 +17,7 @@ table{
     width: 100%;
     font-family: 'DungGeunMo';
     display: inline-block;
+    margin-top: 3rem;
 }
 label{
     display: none;
@@ -82,5 +86,5 @@ tbody{
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 400px;
 }
