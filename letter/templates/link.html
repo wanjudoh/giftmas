@@ -13,40 +13,43 @@
 
 <div id="pk" style="visibility:hidden;">{{letter.pk}}</div>
 <div id="name" style="visibility:hidden;">{{letter.name}}</div>
-<div id="gift" style="visibility:hidden;">{{letter.gift}}</div>
+<div id="gift" style="visibility:hidden;">{{letter.gift.id}}</div>
 <div class="send">편지가 모두 완성되었습니다!</div>
 <div class="send">카카오톡 이미지를 눌러 편지를 전송해주세요!</div>
 <!--이게 카카오 링크 버튼!-->
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
-    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-  />
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
 
 <img class="xmas" src="/static/image/tree.png" style="width: 100%;">
-
-
-
 
 <script type="text/javascript">
   var name = document.getElementById("name").innerHTML;
   var pk = document.getElementById("pk").innerHTML;
   var gift = document.getElementById("gift").innerHTML;
-  var imgList = [
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdJMCdj%2FbtqOzAMtklX%2FAsMOHQYat2Gm0Yf60HqPA1%2Fimg.png',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbMW1Cq%2FbtqOxs8Z6aL%2FfeUvS9GKac3scoi7P0tsN1%2Fimg.png',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFIFoh%2FbtqOCcxMQ4h%2FPFmdszlOYAqd1VMAdGJBlK%2Fimg.png',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbs9mpl%2FbtqOuGNIDXF%2F3IqTj49CuzUTTjfAGfrPsK%2Fimg.png',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKIhOJ%2FbtqOvei8f1i%2FnKOuucc6WD7Xk9XFyfqQW0%2Fimg.png',
-    'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2GmDQ%2FbtqOtDw8JDM%2F9ZPD48QUEjLb7Kgz2J3Lb1%2Fimg.png',
-    ];
+
+  giftList = {
+    '1' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FesOMR4%2FbtqPe2B6rlW%2FPO2py34QMD5kIj5bHhfGWk%2Fimg.png',
+    '2' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FssOiQ%2FbtqPemgu6U6%2FJjgc8Z9kyRgk46S8hl3kj0%2Fimg.png',
+    '3' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmFAUa%2FbtqPdStf3VR%2FnpBPNk7STmVZm40nri1Qzk%2Fimg.png',
+    '4' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FESKqx%2FbtqPe1JYnZX%2FEOSZRxYcHlSvfAVkc2QoVk%2Fimg.png',
+    '5' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvvvSc%2FbtqPeok5plu%2Fd1wdibJHqLyvZhPVwxwNb0%2Fimg.png',
+    '6' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpArK2%2FbtqPfSF3oMD%2FYgenkRQ7yJkvNKKT9P1bc1%2Fimg.png',
+    '7' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcftqFi%2FbtqPnbEw0Xm%2FyQV7Z7lHdYzuhmHprpQ6YK%2Fimg.png',
+    '8' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2TXif%2FbtqPibLQp6P%2FQfRYa4uMtGBtvJP8L1y6CK%2Fimg.png',
+    '9' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fx72FL%2FbtqPe2WvHS3%2Fkiee2WK5Wt7RqJoPyaONhk%2Fimg.png',
+    '10' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsWPyo%2FbtqPlbSkDXC%2F4tisOMPEn3WxJm6x0vvQZ1%2Fimg.png',
+    '11' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0jfDb%2FbtqPfS68Ofv%2Fl5k0Y8kRch9FftWhn2XDQ0%2Fimg.png',
+  }
+
   Kakao.init('b1256f439183fbd64043c20c046e7fa6');
   function sendLink() {
     Kakao.Link.sendCustom({
       templateId: 19567,
       templateArgs: {
         'last': pk,
-        'img': imgList[gift],
+        'img': giftList[gift],
         'name': name,
       }
      })

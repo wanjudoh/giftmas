@@ -1,52 +1,16 @@
 <!DOCTYPE html>
 <html>
 {% load static %}
+
 <head>
     {% if letter.design == 0 %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
     {% elif letter.design == 1 %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/detail1.css' %}">
     {% endif %}
-
-    {% comment %} <script src="https://code.jquery.com/jquery-latest.js"></script>  {% endcomment %}
- 
-    {% comment %} <style>
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-    
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 30%; /* Could be more or less, depending on screen size */                          
-        }
-    </style> {% endcomment %}
 </head>
+
 <body>
-{% comment %} {% if key %}
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <form method="POST">
-            {% csrf_token %}
-            <input type="password" name="pw">
-            <input type="submit" value="입력">
-        </form>
-    </div>
-</div>
-{% endif %} {% endcomment %}
 
 <div class="form">
 
@@ -58,16 +22,9 @@
         <td class="contentdetail">{{letter.content|linebreaks}}</td>
     </tr>
 </table>
-<button class="newbutton" onclick="location.href='{% url 'gift' %}'">답장하기</button>
+<button class="newbutton" onclick="location.href='{% url 'new' %}'">답장하기</button>
 
 </div>
 </body>
-
-{% comment %} <script type="text/javascript">
-    jQuery(document).ready(function() {
-            $('#myModal').show();
-    });
-
-</script> {% endcomment %}
 
 </html>
