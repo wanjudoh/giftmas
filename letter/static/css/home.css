@@ -1,8 +1,11 @@
 @font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 body{
-    background-image: url(../image/pink.jpg);
-    background-repeat: no-repeat;
+    background: url(../image/pink.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 .xmas{
@@ -13,7 +16,7 @@ body{
 }
 .home{
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 30rem;
 }
 
 h1{
@@ -38,5 +41,5 @@ h1{
 .make a:hover { color: rgb(109, 106, 133); text-decoration: none;}
 
 @media only screen and (min-width: 1025px){
-    
+
 }
