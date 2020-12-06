@@ -4,7 +4,7 @@
 
 어떤 선물을 보낼까요?
 
-<script>
+{% comment %} <script>
     var num = 0;
     var imgList = [
         ['{% static "image/gift/0random.png" %}', '선물이 랜덤으로 보내집니다!'],
@@ -38,4 +38,20 @@
     <input type="hidden" name='pk' value={{pk}}>
     <input type="hidden" name="gift" value="0">
     <input type="submit" value="선택!">
+</form> {% endcomment %}
+
+<form method="POST" id='gift_form' action="{%url 'giftsave'%}">
+    {% csrf_token %}
+    {% for g in gifts %}
+        <input type="radio" name="gift" id="gift{{forloop.counter}}" value="{{g.id}}"/>
+        
+        <label for="gift{{forloop.counter}}">
+        <img width="200" src='{{g.img}}'>
+        {{g.title}}
+        </label>
+        
+        <br>
+    {% endfor %}
+    <input type="hidden" name='pk' value={{pk}}>
+    <input type="submit" value="선택!"/>
 </form>

@@ -1,19 +1,21 @@
 @font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
-
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
 body{
-    background-image: url(../image/xmas.png);
-    background-size: 100%;
+    background-image: url(../image/pink.jpg);
     background-repeat: no-repeat;
-    background-color: rgb(250,246,237);
+    background-size: cover;
+}
+svg{
+    color: rgb(109, 106, 133);
 }
 div.flux{
     display: none;
 }
 table{
     width: 100%;
-    font-family: 'DungGeunMo';
+    font-family: 'InkLipquid';
 }
 .table{
     display: inline-block;
@@ -24,7 +26,7 @@ label{
 .form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 500px;
+    margin-top: 200px;
 }
 td,th{
     margin-bottom: 20px;
@@ -37,22 +39,23 @@ input{
 }
 .newbutton{
     font-size: 3.5rem;
-    font-family: 'DungGeunMo';
+    font-family: 'InkLipquid';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: #256340;
+    background-color: transparent;
     width: 80%;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
     color: white;
+    border: 6px solid white;
     border-radius: 40px;
 }
-.newbutton:hover{
-    font-weight: bold;
-    background-color: white;
-    color: #256340;
-}
+
+.newbutton a:link { color:rgb(154, 134, 187); text-decoration: none;}
+.newbutton a:visited { color: rgb(154, 134, 187); text-decoration: none;}
+.newbutton a:hover { color: rgb(109, 106, 133); text-decoration: none;}
+
 
 .contentdetail{
     margin: 0px;
@@ -60,34 +63,35 @@ input{
     border: none;
     height: 300px;
     width: 80%;
-    font-family: 'DungGeunMo';
-    background-color: rgb(250,246,237);
+    font-family: 'InkLipquid';
+    background-color: transparent;
 }
 .titledetail{
     font-size: 3rem;
     border: none;
-    font-family: 'DungGeunMo';
+    font-family: 'InkLipquid';
     width: 80%;
     margin-bottom: 50px;
-    background-color: rgb(250,246,237);
+    background-color: transparent;
 }
 textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
-    font-size: 3rem;
+    font-size: 3.5rem;
     border: none;
     border-bottom: 2px solid black;
-    font-family: 'DungGeunMo';
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: rgb(250,246,237);
+    font-family: 'InkLipquid';
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
 }
 
 textarea#id_content.form-control{
     margin: 0px;
-    font-size: 3rem;
+    font-size: 3.5rem;
     border: none;
     border-bottom: 2px solid black;
-    height: 400px;
-    width: 80%;
-    font-family: 'DungGeunMo';
-    background-color: rgb(250,246,237);
+    height: 600px;
+    width: 85%;
+    font-family: 'InkLipquid';
+    background-color: transparent;
 }
