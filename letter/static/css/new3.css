@@ -9,19 +9,15 @@ svg{
     color: white;
 }
 .flux{
-    display: none;
-}
-img.mouse{
-    display: none;
+    visibility: hidden;;
 }
 
 table{
     width: 100%;
     font-family: 'Godo';
-}
-.table{
     display: inline-block;
 }
+
 label{
     display: none;
 }
@@ -58,23 +54,7 @@ input{
     color: #34558b;
 }
 
-.contentdetail{
-    margin: 0px;
-    font-size: 3rem;
-    border: none;
-    height: 200px;
-    width: 80%;
-    font-family: 'Godo';
-    background-color: rgb(250,246,237);
-}
-.titledetail{
-    font-size: 3rem;
-    border: none;
-    font-family: 'Godo';
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: rgb(250,246,237);
-}
+
 textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
     font-size: 2.8rem;
     border: 6px solid white;
@@ -97,4 +77,16 @@ textarea#id_content.form-control{
     font-family: 'Godo';
     background-color: transparent;
     color: white;
+}
+
+/* detail.html 에서 적용되는 부분 */
+tbody{
+    width: 100%;
+    display: table;
+}
+
+.detail-form{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 300px;
 }

@@ -3,21 +3,21 @@
 @font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
 body{
-    background-image: url(../image/pink.jpg);
-    background-repeat: no-repeat;
+    background: url(../image/pink.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 svg{
     color: rgb(109, 106, 133);
 }
 div.flux{
-    display: none;
+    visibility: hidden;;
 }
 table{
     width: 100%;
     font-family: 'InkLipquid';
-}
-.table{
     display: inline-block;
 }
 label{
@@ -57,24 +57,7 @@ input{
 .newbutton a:hover { color: rgb(109, 106, 133); text-decoration: none;}
 
 
-.contentdetail{
-    margin: 0px;
-    font-size: 3rem;
-    border: none;
-    height: 300px;
-    width: 80%;
-    font-family: 'InkLipquid';
-    background-color: transparent;
-}
-.titledetail{
-    font-size: 3rem;
-    border: none;
-    font-family: 'InkLipquid';
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: transparent;
-}
-textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, .titledetail{
     font-size: 3.5rem;
     border: none;
     border-bottom: 2px solid black;
@@ -85,7 +68,7 @@ textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.fo
     background-color: transparent;
 }
 
-textarea#id_content.form-control{
+textarea#id_content.form-control, .contentdetail{
     margin: 0px;
     font-size: 3.5rem;
     border: none;
@@ -94,4 +77,16 @@ textarea#id_content.form-control{
     width: 85%;
     font-family: 'InkLipquid';
     background-color: transparent;
+}
+
+/* detail.html 에서 적용되는 부분 */
+tbody{
+    width: 100%;
+    display: table;
+}
+
+.detail-form{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 300px;
 }

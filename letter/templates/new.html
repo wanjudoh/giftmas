@@ -43,25 +43,24 @@
 </a>
 <div class="container">
   <div class="flux"> 
-    2020, 반짝반짝 빛나는 <br> 한 해가 되기를 기원합니다
+    2021, 반짝반짝 빛나는 <br> 한 해가 되기를 기원합니다
   </div>
 </div>
 <div class="form" name="form">
-<form method="POST" name="newform">
-    {% csrf_token %}
-    <table class="table">
-    {{ form }}
-    </table>
-    <input type="hidden" name='gift' value={{gift}}>
-    <input type="hidden" name="design" value="0" id="design">
-    {{error}}
-    {{ form.errors }}
-    {{ form.non_field_errors }}
-    <br>
-    <button class="newbutton">저장</button>
-
-
-</form></div>
+  <form method="POST" name="newform">
+      {% csrf_token %}
+      <table>
+      {{ form }}
+      </table>
+      <input type="hidden" name='gift' value={{gift}}>
+      <input type="hidden" name="design" value="0" id="design">
+      {{error}}
+      {{ form.errors }}
+      {{ form.non_field_errors }}
+      <br>
+      <button class="newbutton">저장</button>
+  </form>
+</div>
 </body>
 
 </html>

@@ -4,24 +4,26 @@
 
 <head>
     {% if letter.design == 0 %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
     {% elif letter.design == 1 %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/detail1.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new2.css' %}">
+    {% elif letter.design == 2 %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new3.css' %}">
+    {% elif letter.design == 3 %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new4.css' %}">
     {% endif %}
-</head>
+
+<div class="detail-form">
 
 <body>
-
-<div class="form">
-
-<table class="table">
-    <tr>
-        <th class="titledetail">{{letter.title}}</th>
-    </tr>
-    <tr>
-        <td class="contentdetail">{{letter.content|linebreaks}}</td>
-    </tr>
-</table>
+    <table style="width:80%; margin-left: auto; margin-right: auto;">
+        <tr>
+            <th class="titledetail">{{letter.title}}</th>
+        </tr>
+        <tr>
+            <td class="contentdetail">{{letter.content|linebreaks}}</td>
+        </tr>
+    </table>
 <button class="newbutton" onclick="location.href='{% url 'new' %}'">답장하기</button>
 
 </div>
