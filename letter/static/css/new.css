@@ -4,7 +4,7 @@ body{
     background-color: black;
 }
 .container{
-    margin-top: 20rem;
+    margin-top: 15rem;
     width: 70%;
     text-align: center;
     margin-left: auto;
@@ -59,7 +59,7 @@ input{
     color: #1041FF;
 }
 
-textarea#id_title.form-control, textarea#id_name.form-control, th.titledetail{
+textarea#id_title.form-control, textarea#id_name.form-control{
     font-size: 3rem;
     color: white;
     border: none;
@@ -71,7 +71,7 @@ textarea#id_title.form-control, textarea#id_name.form-control, th.titledetail{
     background-color: transparent;
 }
 
-textarea#id_content.form-control, .contentdetail{
+textarea#id_content.form-control{
     margin: 0px;
     font-size: 3rem;
     color: white;
@@ -114,10 +114,33 @@ textarea#id_content.form-control, .contentdetail{
 tbody{
     width: 100%;
     display: table;
+    margin-top: 20px;
 }
 
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+th.titledetail{
+    font-size: 3rem;
+    color: white;
+    border: none;
+    font-family: 'BMJUA';
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+}
+
+.contentdetail{
+    margin: 0px;
+    font-size: 3rem;
+    color: white;
+    border: none;
+    height: 400px;
+    width: 80%;
+    font-family: 'BMJUA';
+    background-color: transparent;
 }
