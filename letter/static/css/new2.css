@@ -1,5 +1,3 @@
-@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body{
@@ -9,8 +7,8 @@ body{
     background-color: rgb(250,246,237);
 }
 
-.flux{
-    visibility: hidden;;
+.flux, .neon{
+    visibility: hidden;
 }
 
 table{
@@ -25,7 +23,7 @@ label{
 .form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 500px;
+    margin-top: 300px;
 }
 td,th{
     margin-bottom: 20px;
@@ -56,7 +54,7 @@ input{
 }
 
 
-textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control{
     font-size: 3rem;
     border: none;
     border-bottom: 2px solid black;
@@ -81,10 +79,31 @@ textarea#id_content.form-control{
 tbody{
     width: 100%;
     display: table;
+    margin-top: 140px;
 }
 
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+th.titledetail{
+    font-size: 3rem;
+    color: black;
+    border: none;
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+}
+
+.contentdetail{
+    margin: 0px;
+    font-size: 3rem;
+    color: black;
+    border: none;
+    height: 400px;
+    width: 80%;
+    background-color: transparent;
 }

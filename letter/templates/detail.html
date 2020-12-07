@@ -11,11 +11,97 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/new3.css' %}">
     {% elif letter.design == 3 %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/new4.css' %}">
+    {% elif letter.design == 4 %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/new5.css' %}">
     {% endif %}
+</head>
+<body>
+
+{% if request.user_agent.is_pc %}
+
+<script src="https://code.jquery.com/jquery-latest.js"></script> 
+<style>
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+    border-radius: 10px;
+    font-family: 'BBTreeGB';
+    background-color: #fcfcfc;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #9e9e9e;
+    width: 30%; /* Could be more or less, depending on screen size */                          
+}
+
+.close{
+    cursor: pointer; 
+    background-color:#d3d3d3;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+</style>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    
+    <!-- Modal content -->
+    <div class="modal-content">
+        <p style="text-align: center;"><b><span style="font-size: 18pt;">앗, 잠시만요!</span></b></p>
+        <p style="text-align: center; line-height: 1.5;"><br></p>
+        <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">GIFTMAS 사이트는</span></p>
+        <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">모바일 환경에 최적화되어 있습니다!</span></p>
+        <p style="text-align: center; line-height: 1.5;"><br></p>
+        <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">모바일로 접속한 뒤 사용해주세요 :)</span></p>
+        <p style="text-align: center; line-height: 1.5;"><span style="font-size: 10pt; color: #9e9e9e;">GIFTMAS, 사랑하는 사람들에게 마음을 전하세요</span></p>
+    <div class="close" onClick="close_pop();">
+        <span class="pop_bt" style="font-size: 13pt;">CLOSE</span>
+    </div>
+    </div>
+    
+</div>
+    <!--End Modal-->
+    
+    <script type="text/javascript">
+    
+      jQuery(document).ready(function() {
+              $('#myModal').show();
+      });
+      //팝업 Close 기능
+      function close_pop(flag) {
+            $('#myModal').hide();
+      };
+      
+  </script>
+    
+    
+{% endif %}
+
 
 <div class="detail-form">
+    <div class="container">
+        <div class="flux"> 
+          2021, 반짝반짝 빛나는 <br> 한 해가 되기를 기원합니다
+        </div>
+        <div class="neon"> 
+            MERRY X-MAS <br> HAPPY NEW YEAR
+        </div>
+    </div>
 
-<body>
     <table style="width:80%; margin-left: auto; margin-right: auto;">
         <tr>
             <th class="titledetail">{{letter.title}}</th>
