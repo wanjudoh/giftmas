@@ -1,7 +1,5 @@
-@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'DungGeunMo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 body{
     background: url(../image/pink.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -12,12 +10,12 @@ body{
 svg{
     color: rgb(109, 106, 133);
 }
-div.flux{
-    visibility: hidden;;
+.flux, .neon{
+    visibility: hidden;
 }
 table{
     width: 100%;
-    font-family: 'InkLipquid';
+    font-family: 'BBTreeGB';
     display: inline-block;
     margin-top: 5rem;
 }
@@ -40,43 +38,43 @@ input{
 }
 .newbutton{
     font-size: 3.5rem;
-    font-family: 'InkLipquid';
+    font-family: 'BBTreeGB';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: transparent;
+    background-color: rgb(109, 106, 133);
     width: 80%;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: rgb(109, 106, 133);
+    color: white;
     border: 6px solid rgb(109, 106, 133);
     border-radius: 40px;
 }
 
-.newbutton a:link { color:rgb(109, 106, 133); text-decoration: none;}
-.newbutton a:visited { color: rgb(109, 106, 133); text-decoration: none;}
-.newbutton a:hover { color: rgb(109, 106, 133); text-decoration: none;}
+.newbutton a:link { color:white; text-decoration: none;}
+.newbutton a:visited { color: white; text-decoration: none;}
+.newbutton a:hover { color: white; text-decoration: none;}
 
 
-textarea#id_title.form-control, textarea#id_name.form-control, .titledetail{
-    font-size: 3.5rem;
+textarea#id_title.form-control, textarea#id_name.form-control{
+    font-size: 3rem;
     border: none;
     border-bottom: 2px solid rgb(109, 106, 133);
-    font-family: 'InkLipquid';
+    font-family: 'BBTreeGB';
     width: 85%;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: transparent;
 }
 
-textarea#id_content.form-control, .contentdetail{
+textarea#id_content.form-control{
     margin: 0px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     border: none;
     border-bottom: 2px solid rgb(109, 106, 133);
     height: 400px;
     width: 85%;
-    font-family: 'InkLipquid';
+    font-family: 'BBTreeGB';
     background-color: transparent;
 }
 
@@ -84,10 +82,32 @@ textarea#id_content.form-control, .contentdetail{
 tbody{
     width: 100%;
     display: table;
+    margin-top: 140px;
 }
 
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+th.titledetail{
+    font-size: 3rem;
+    color: rgb(109, 106, 133);
+    border: none;
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+}
+
+.contentdetail{
+    margin: 0px;
+    font-size: 3rem;
+    color: rgb(109, 106, 133);
+    border: none;
+    height: 400px;
+    width: 80%;
+    background-color: transparent;
+    line-height: 1.5;
 }

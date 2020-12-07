@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Cafe24Oneprettynight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@font-face {font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal;}
 
 body{
     background: url(../image/snowman.png) no-repeat center center fixed; 
@@ -11,8 +6,8 @@ body{
 svg{
     color: white;
 }
-.flux{
-    visibility: hidden;;
+.flux, .neon{
+    visibility: hidden;
 }
 
 table{
@@ -28,7 +23,7 @@ label{
 .form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 td,th{
     margin-bottom: 20px;
@@ -60,8 +55,8 @@ input{
 }
 
 
-textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.form-control{
-    font-size: 2.8rem;
+textarea#id_title.form-control, textarea#id_name.form-control{
+    font-size: 3rem;
     border: 3px solid white;
     font-family: 'Cafe24Oneprettynight';
     width: 80%;
@@ -76,7 +71,7 @@ textarea#id_title.form-control, textarea#id_name.form-control, textarea#id_pw.fo
 }
 textarea#id_content.form-control{
     margin: 0px;
-    font-size: 2.8rem;
+    font-size: 3rem;
     border: 3px solid white;
     height: 400px;
     width: 80%;
@@ -90,10 +85,32 @@ textarea#id_content.form-control{
 tbody{
     width: 100%;
     display: table;
+    margin-top: 140px;
 }
 
 .detail-form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+th.titledetail{
+    font-size: 3rem;
+    color: white;
+    border: none;
+    width: 80%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+}
+
+.contentdetail{
+    margin: 0px;
+    font-size: 3rem;
+    color: white;
+    border: none;
+    height: 400px;
+    width: 80%;
+    background-color: transparent;
+    line-height: 1.5;
 }
