@@ -55,21 +55,22 @@
   var name = document.getElementById("name").innerHTML;
   var pk = document.getElementById("pk").innerHTML;
   var gift = document.getElementById("gift").innerHTML;
-
+  
   giftList = {
-    '1' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FesOMR4%2FbtqPe2B6rlW%2FPO2py34QMD5kIj5bHhfGWk%2Fimg.png',
-    '2' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FssOiQ%2FbtqPemgu6U6%2FJjgc8Z9kyRgk46S8hl3kj0%2Fimg.png',
-    '3' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbmFAUa%2FbtqPdStf3VR%2FnpBPNk7STmVZm40nri1Qzk%2Fimg.png',
-    '4' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FESKqx%2FbtqPe1JYnZX%2FEOSZRxYcHlSvfAVkc2QoVk%2Fimg.png',
-    '5' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvvvSc%2FbtqPeok5plu%2Fd1wdibJHqLyvZhPVwxwNb0%2Fimg.png',
-    '6' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpArK2%2FbtqPfSF3oMD%2FYgenkRQ7yJkvNKKT9P1bc1%2Fimg.png',
-    '7' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcftqFi%2FbtqPnbEw0Xm%2FyQV7Z7lHdYzuhmHprpQ6YK%2Fimg.png',
-    '8' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2TXif%2FbtqPibLQp6P%2FQfRYa4uMtGBtvJP8L1y6CK%2Fimg.png',
-    '9' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fx72FL%2FbtqPe2WvHS3%2Fkiee2WK5Wt7RqJoPyaONhk%2Fimg.png',
-    '10' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsWPyo%2FbtqPlbSkDXC%2F4tisOMPEn3WxJm6x0vvQZ1%2Fimg.png',
-    '11' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0jfDb%2FbtqPfS68Ofv%2Fl5k0Y8kRch9FftWhn2XDQ0%2Fimg.png',
+    '0' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbVjbJk%2FbtqPRATdzoi%2FEOaa2ZwsRg8CvsGvdhXAEk%2Fimg.png',
+    '1' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtEz0v%2FbtqPRAlpq9x%2FmbBPIzyw8q49zJXsD6vFL0%2Fimg.png',
+    '2' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWJeHV%2FbtqP6obTyHb%2FYQFqwKt7v7VpbrDqfXa9F0%2Fimg.png',
+    '3' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvwUX2%2FbtqP0tyg4X5%2FKydLakn0sgvoeM8cJwFqe0%2Fimg.png',
+    '4' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Feo92ed%2FbtqPYkB6dyl%2FB5PMgO0Vwv4uwL7ZbzfPO1%2Fimg.png',
+    '5' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcJOH5M%2FbtqPZJBqm5P%2FnbHdbFeJThMsNA0t1ikQkk%2Fimg.png',
+    '6' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrtFYV%2FbtqPRBSdnYa%2Fhjhv1LiPwC9PTHzLVKsgWk%2Fimg.png',
+    '7' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbBPDoU%2FbtqP4myDkxK%2FnicfTVUWAZ61nAYhMokeBk%2Fimg.png',
+    '8' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FseZ9G%2FbtqP4l7x6RE%2F4yXncaOFbo01ckjYYprFA0%2Fimg.png',
+    '9' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fs8xA2%2FbtqP10o5tVa%2F3yaWBqf0lvOrO80NqWDZW0%2Fimg.png',
+    '10' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc2UGvR%2FbtqPYTK03Bh%2FNTZgPcRo2wsvFxN078pXFk%2Fimg.png',
+    '11' : 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdf990p%2FbtqP12tEkeN%2FRaTmkU7StLwnVylWxRnq60%2Fimg.png',
   }
-
+  
   Kakao.init('b1256f439183fbd64043c20c046e7fa6');
   function sendLink() {
     Kakao.Link.sendCustom({
