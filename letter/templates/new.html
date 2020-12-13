@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <!--편지 작성하고 편지지디자인 고르는 페이지-->
+{% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
 <head>
   <link id="css" rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
@@ -86,3 +89,5 @@
   </form>
 </div>
 </body>
+{% endblock %}
+</html>
