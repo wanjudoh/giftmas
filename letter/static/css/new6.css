@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'UhBeeRami';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRami.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+
+body{
+    background: url(../image/tree.gif) no-repeat fixed; 
+    background-position: center bottom;
+}
+svg{
+    color: #F0CD13;
+}
+.flux, .neon{
+    visibility: hidden;
+}
+
+table{
+    width: 100%;
+    font-family: 'UhBeeRami';
+    display: inline-block;
+    margin-top: 5rem;
+}
+label{
+    display: none;
+}
+.form{
+    text-align: center;
+    vertical-align: middle;
+}
+td,th{
+    margin-bottom: 20px;
+}
+tr{
+    margin-bottom: 30px;
+}
+input{
+    margin-bottom: 1rem;
+}
+.newbutton{
+    font-size: 3.5rem;
+    font-family: 'BBTreeGB';
+    text-align: center;
+    letter-spacing: 1rem;
+    background-color: #DB8181;
+    width: 80%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.newbutton:hover{
+    background-color: transparent;
+    color: #DB8181;
+    border: 3px solid #DB8181;
+}
+
+
+textarea#id_title.form-control, textarea#id_name.form-control{
+    font-size: 3rem;
+    border: none;
+    font-family: 'UhBeeRami';
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+textarea#id_content.form-control{
+    margin: 0px;
+    font-size: 3rem;
+    border: none;
+    height: 350px;
+    width: 85%;
+    font-family: 'UhBeeRami';
+    background-color: transparent;
+    text-align: center;
+
+}
+
+/* detail.html 에서 적용되는 부분 */
+tbody{
+    width: 100%;
+    display: table;
+    margin-top: 140px;
+}
+
+.detail-form{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 200px;
+}
+
+th.titledetail{
+    font-size: 3rem;
+    border: none;
+    font-family: 'UhBeeRami';
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    text-align: center;
+
+}
+
+.contentdetail{
+    margin: 0px;
+    font-size: 3rem;
+    border: none;
+    height: 350px;
+    width: 85%;
+    font-family: 'UhBeeRami';
+    background-color: transparent;
+    text-align: center;
+}
