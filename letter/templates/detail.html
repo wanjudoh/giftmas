@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+{% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
 
 <head>
     {% if letter.design == 0 %}
@@ -115,4 +118,6 @@
 </div>
 </body>
 
+
+{% endblock %}
 </html>
