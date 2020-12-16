@@ -1,14 +1,21 @@
 @font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Cafe24Syongsyong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
-    background: url(../image/pink.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../image/bg_4.gif) no-repeat center top fixed; 
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-color: #31766e;
 }
 svg{
-    color: rgb(109, 106, 133);
+    color: white;
 }
 .flux, .neon{
     visibility: hidden;
@@ -37,46 +44,67 @@ tr{
 input{
     margin-bottom: 1rem;
 }
+
+::placeholder{
+    color: #caefd9;
+}
+
 .newbutton{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'BBTreeGB';
     text-align: center;
-    letter-spacing: 1rem;
-    background-color: rgb(109, 106, 133);
-    width: 80%;
+    /* letter-spacing: 1rem; */
+    background-color: white;
+    width: 40%;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: white;
-    border: 6px solid rgb(109, 106, 133);
-    border-radius: 40px;
+    color: #31766e;
+    border: none;
+    border-radius: 100px;
 }
 
-.newbutton a:link { color:white; text-decoration: none;}
-.newbutton a:visited { color: white; text-decoration: none;}
-.newbutton a:hover { color: white; text-decoration: none;}
+.newbutton:hover{
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
 
 
-textarea#id_title.form-control, textarea#id_name.form-control{
-    font-size: 3rem;
+textarea#id_title.form-control{
+    font-size: 3.5rem;
     border: none;
-    border-bottom: 2px solid rgb(109, 106, 133);
-    font-family: 'BBTreeGB';
+    font-family: 'Cafe24Syongsyong';
     width: 85%;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+textarea#id_name.form-control{
+    font-size: 3rem;
+    border: none;
+    font-family: 'Cafe24Syongsyong';
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    text-align: center;
+    color: #caefd9;
 }
 
 textarea#id_content.form-control{
-    margin: 0px;
     font-size: 3rem;
     border: none;
-    border-bottom: 2px solid rgb(109, 106, 133);
     height: 400px;
-    width: 85%;
-    font-family: 'BBTreeGB';
+    width: 80%;
+    font-family: 'Cafe24Syongsyong';
     background-color: transparent;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
 }
 
 /* detail.html 에서 적용되는 부분 */
@@ -93,22 +121,26 @@ tbody{
 }
 
 th.titledetail{
-    font-size: 3rem;
-    color: rgb(109, 106, 133);
+    font-size: 4rem;
     border: none;
-    width: 80%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    font-family: 'Cafe24Syongsyong';
+    width: 85%;
+    padding-top: 80px;
+    margin-bottom: 25px;
     background-color: transparent;
+    text-align: center;
+    color: white;
 }
 
 .contentdetail{
-    margin: 0px;
     font-size: 3rem;
-    color: rgb(109, 106, 133);
     border: none;
     height: 400px;
     width: 80%;
+    font-family: 'Cafe24Syongsyong';
     background-color: transparent;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
     line-height: 1.5;
 }
