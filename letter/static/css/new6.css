@@ -121,3 +121,11 @@ th.titledetail{
     background-color: transparent;
     text-align: center;
 }
+
+.copyright {
+    display: block !important;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+}
