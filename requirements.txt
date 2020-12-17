@@ -14,3 +14,4 @@ ua-parser==0.10.0
 user-agents==2.2.0
 whitenoise==5.0.1
 xlrd==1.2.0
+pyyaml==5.3.1
