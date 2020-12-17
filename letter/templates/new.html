@@ -16,6 +16,7 @@
     "{% static 'css/new3.css' %}",
     "{% static 'css/new4.css' %}",
     "{% static 'css/new5.css' %}",
+    "{% static 'css/new6.css' %}",
   ];
 
     window.onload = function() {
@@ -39,6 +40,25 @@
 
 <body>
 
+<div class="snowflakes" aria-hidden="true" style="display:none">
+
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❅</div>
+
+</div>
+
 <a id='change1'>
   <i class="fas fa-chevron-circle-left" style="font-size: 70px; position: fixed; left: 10px; top: 800px;"></i>
 </a>
@@ -53,6 +73,7 @@
     MERRY X-MAS <br> HAPPY NEW YEAR
   </div>
 </div>
+
 <div class="form" name="form">
   <form method="POST" name="newform">
       {% csrf_token %}

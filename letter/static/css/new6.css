@@ -1,14 +1,18 @@
-@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'UhBeeRami';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRami.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face { font-family: 'BBTreeGB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal;}
+
 
 body{
-    background: url(../image/pink.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../image/tree.gif) no-repeat fixed; 
+    background-position: center bottom;
 }
 svg{
-    color: rgb(109, 106, 133);
+    color: #F0CD13;
 }
 .flux, .neon{
     visibility: hidden;
@@ -16,7 +20,7 @@ svg{
 
 table{
     width: 100%;
-    font-family: 'BBTreeGB';
+    font-family: 'UhBeeRami';
     display: inline-block;
     margin-top: 5rem;
 }
@@ -26,7 +30,6 @@ label{
 .form{
     text-align: center;
     vertical-align: middle;
-    margin-top: 200px;
 }
 td,th{
     margin-bottom: 20px;
@@ -42,41 +45,45 @@ input{
     font-family: 'BBTreeGB';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: rgb(109, 106, 133);
+    background-color: #DB8181;
     width: 80%;
     height: 100px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 30px;
     color: white;
-    border: 6px solid rgb(109, 106, 133);
+    border: none;
     border-radius: 40px;
 }
 
-.newbutton a:link { color:white; text-decoration: none;}
-.newbutton a:visited { color: white; text-decoration: none;}
-.newbutton a:hover { color: white; text-decoration: none;}
+.newbutton:hover{
+    background-color: transparent;
+    color: #DB8181;
+    border: 3px solid #DB8181;
+}
 
 
 textarea#id_title.form-control, textarea#id_name.form-control{
     font-size: 3rem;
     border: none;
-    border-bottom: 2px solid rgb(109, 106, 133);
-    font-family: 'BBTreeGB';
+    font-family: 'UhBeeRami';
     width: 85%;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: transparent;
+    text-align: center;
+
 }
 
 textarea#id_content.form-control{
     margin: 0px;
     font-size: 3rem;
     border: none;
-    border-bottom: 2px solid rgb(109, 106, 133);
-    height: 400px;
+    height: 350px;
     width: 85%;
-    font-family: 'BBTreeGB';
+    font-family: 'UhBeeRami';
     background-color: transparent;
+    text-align: center;
+
 }
 
 /* detail.html 에서 적용되는 부분 */
@@ -94,21 +101,23 @@ tbody{
 
 th.titledetail{
     font-size: 3rem;
-    color: rgb(109, 106, 133);
     border: none;
-    width: 80%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    font-family: 'UhBeeRami';
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background-color: transparent;
+    text-align: center;
+
 }
 
 .contentdetail{
     margin: 0px;
     font-size: 3rem;
-    color: rgb(109, 106, 133);
     border: none;
-    height: 400px;
-    width: 80%;
+    height: 350px;
+    width: 85%;
+    font-family: 'UhBeeRami';
     background-color: transparent;
-    line-height: 1.5;
+    text-align: center;
 }
