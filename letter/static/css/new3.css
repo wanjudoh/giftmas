@@ -39,25 +39,25 @@ input{
     font-family: 'Cafe24Oneprettynight';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: transparent;
+    background-color: white;
     width: 80%;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: white;
+    color: #34558b;
     border: 3px solid white;
     border-radius: 10px;
 }
 .newbutton:hover{
     font-weight: bold;
-    background-color: white;
-    color: #34558b;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 
 textarea#id_title.form-control, textarea#id_name.form-control{
     font-size: 3rem;
-    border: 3px solid white;
+    border: 0px;
     font-family: 'Cafe24Oneprettynight';
     width: 80%;
     margin-top: 25px;
