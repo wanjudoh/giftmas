@@ -16,7 +16,7 @@ def new(request):
             letter.content = form.cleaned_data['content']
             letter.name = form.cleaned_data['name']
             import random
-            letter.gift = Gift.objects.get(pk=random.randint(1, 11))
+            letter.gift = Gift.objects.get(pk=random.randint(0, 11))
             letter.design = request.POST['design']
             letter.save()
             return render(request, 'link.html', {'letter':letter})
