@@ -62,7 +62,7 @@ input{
 }
 
 
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control{
     font-size: 3rem;
     border: none;
     font-family: 'UhBeeRami';
@@ -74,9 +74,19 @@ textarea#id_title.form-control, textarea#id_name.form-control{
 
 }
 
+textarea#id_name.form-control{
+    font-size: 1.5rem;
+    border: none;
+    font-family: 'UhBeeRami';
+    width: 85%;
+    margin-bottom: 25px;
+    background-color: transparent;
+    text-align: center;
+}
+
 textarea#id_content.form-control{
     margin: 0px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     border: none;
     height: 350px;
     width: 85%;
@@ -113,7 +123,7 @@ th.titledetail{
 
 .contentdetail{
     margin: 0px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     border: none;
     height: 350px;
     width: 85%;
