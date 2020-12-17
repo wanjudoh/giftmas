@@ -71,6 +71,7 @@ textarea#id_title.form-control, textarea#id_name.form-control{
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: transparent;
+    text-align: center;
 }
 
 textarea#id_content.form-control{
@@ -83,6 +84,8 @@ textarea#id_content.form-control{
     width: 80%;
     font-family: 'BMJUA';
     background-color: transparent;
+    text-align: center;
+    padding: 20px 0px;
 }
 
 .flux {
