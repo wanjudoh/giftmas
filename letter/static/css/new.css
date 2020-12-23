@@ -61,7 +61,7 @@ input{
     color: #1041FF;
 }
 
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, .namedetail{
     font-size: 3rem;
     color: white;
     border: none;
@@ -148,4 +148,9 @@ th.titledetail{
     width: 80%;
     font-family: 'BMJUA';
     background-color: transparent;
+}
+
+
+.namedetail{
+    border: none;
 }

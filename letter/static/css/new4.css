@@ -83,7 +83,7 @@ textarea#id_title.form-control{
     color: white;
 }
 
-textarea#id_name.form-control{
+textarea#id_name.form-control, .namedetail{
     font-size: 3rem;
     border: none;
     font-family: 'Cafe24Syongsyong';
@@ -143,4 +143,9 @@ th.titledetail{
     text-align: center;
     color: white;
     line-height: 1.5;
+}
+
+
+.namedetail{
+    border: none;
 }

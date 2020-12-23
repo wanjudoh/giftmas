@@ -69,7 +69,7 @@ input{
     color: #800E0B;
 }
 
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, .namedetail{
     font-size: 2.7rem;
     color: white;
     border: none;
@@ -153,4 +153,9 @@ th.titledetail{
     width: 80%;
     font-family: 'TmoneyRoundWindExtraBold';
     background-color: transparent;
+}
+
+
+.namedetail{
+    border: none;
 }

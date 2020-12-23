@@ -59,7 +59,7 @@ input{
     background-color: #ffffff;
     width: 80%;
     height: 100px;
-    margin-bottom: 30px;
+    margin: 30px;
     color: #1d4c79;
     border-radius: 40px;
 }
@@ -89,7 +89,7 @@ textarea#id_title.form-control{
     letter-spacing: 4px;
 }
 
-textarea#id_name.form-control{
+textarea#id_name.form-control, .namedetail{
     font-size: 3rem;
     border: none;
     /* border-bottom: 2px solid black; */
@@ -163,4 +163,9 @@ th.titledetail{
     background-color: transparent;
     text-align: center;
     color: #ffffff;
+}
+
+
+.namedetail{
+    border: none;
 }

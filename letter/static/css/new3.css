@@ -39,23 +39,23 @@ input{
     font-family: 'Cafe24Oneprettynight';
     text-align: center;
     letter-spacing: 1rem;
-    background-color: transparent;
+    background-color: white;
     width: 80%;
     height: 100px;
     margin-top: 60px;
     margin-bottom: 30px;
-    color: white;
+    color: #34558b;
     border: 3px solid white;
     border-radius: 10px;
 }
 .newbutton:hover{
     font-weight: bold;
-    background-color: white;
-    color: #34558b;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, .namedetail{
     font-size: 3rem;
     border: 3px solid white;
     font-family: 'Cafe24Oneprettynight';
@@ -70,6 +70,7 @@ textarea#id_title.form-control, textarea#id_name.form-control{
 }
 textarea#id_title.form-control{
     font-size: 4rem;
+    border: 0px;
 }
 ::placeholder{
     color: white;
@@ -120,4 +121,9 @@ th.titledetail{
     width: 80%;
     background-color: transparent;
     line-height: 1.5;
+}
+
+
+.namedetail{
+    border: none;
 }
