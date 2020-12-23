@@ -55,7 +55,7 @@ input{
 }
 
 
-textarea#id_title.form-control, textarea#id_name.form-control{
+textarea#id_title.form-control, textarea#id_name.form-control, .namedetail{
     font-size: 3rem;
     border: 3px solid white;
     font-family: 'Cafe24Oneprettynight';
@@ -121,4 +121,9 @@ th.titledetail{
     width: 80%;
     background-color: transparent;
     line-height: 1.5;
+}
+
+
+.namedetail{
+    border: none;
 }
